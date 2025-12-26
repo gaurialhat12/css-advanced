@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+    height: 100vh;
+    width:100wh;
+    background-image: linear-gradient(rgba(0,0,20,0)), url('./images/360_F_105907729_4RzHYsHJ2UFt5koUI19fc6VzyFPEjeXe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head{
+    background-color: rgb(190, 190, 190);
+    border-radius: 30px;
+    display: flex;
+    /* padding-left: 4px; */
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav ul li{
+    color: black;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-radius:0px 10px;
+    padding: 3px;
+    width: 70px;
+    background-image:linear-gradient(45deg,white,burlywood) ;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    && input{
+        height: 30px;
+        width: 500px;
+        border-radius: 30px;
+    }
+}
+
+
+.logo-img{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.logo{
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.content{
+    /* color: black; */
+    background-image: linear-gradient(45deg,burlywood,white);
+    && .title{
+        font-size: 40px;
+    }
+    font-size: 40px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+}
+
+.sideimg{
+    height: 600px;
+}
+
+.btn{
+    height: 35px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 0px gray;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: burlywood;
+    transition-duration: .6s;
+    scale: calc(1.1);
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <head>
+            <div class="head">
+                <div class="logo">
+                    <img class="logo-img" src="./images/bird-colorful-gradient-design-vector_343694-2506.avif" alt="LOGO">
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="search">
+                </div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Shop</li>
+                        <li>Blog</li>
+                        <li>contact</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="home">
+                <div class="content">
+                    <div class="title">Welcome !</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat totam asperiores laboriosam est qui?</div>
+                    <button class="btn">Read more</button>
+                </div>
+                <div class="imagediv"><img class="sideimg" src="./images/pngtree-flying-cup-of-coffee-with-splash-and-png-image_15739217.png" alt=""></div>
+            </div>
+        </head>
+    </div>
+</body>
+</html>
